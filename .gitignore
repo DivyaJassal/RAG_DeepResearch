@@ -1,0 +1,59 @@
+# ==========================================
+# 1. Project-Specific Large Data Blocks (CRITICAL)
+# ==========================================
+# Blocks the local vector database folder containing binary indexing matrices
+chroma_db/
+db/
+*.db
+*.sqlite3
+
+# Blocks any raw paper datasets or local corpus PDFs you might be scraping
+data/
+corpus/
+*.pdf
+
+# ==========================================
+# 2. Machine Learning & Model Cache
+# ==========================================
+# Blocks Hugging Face/Sentence-Transformers from uploading heavy text-embedding weights
+.cache/
+.huggingface/
+models/
+
+# ==========================================
+# 3. Environment Dependencies & Virtual Envs
+# ==========================================
+# Prevents thousands of library source files from cluttering your repository
+venv/
+.venv/
+env/
+.env
+bin/
+include/
+lib/
+lib64/
+share/
+
+# ==========================================
+# 4. Python Compilation & Execution Artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ==========================================
+# 5. Pipeline Logs & Hidden OS Metadata
+# ==========================================
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+node_modules/
+
+*.pth
+*.pt
+*.h5
+*.ckpt
